@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNavigation_Redux_CodePush'
+
+include ':app'
