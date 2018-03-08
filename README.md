@@ -7,4 +7,4 @@
 2. redux已经配置完毕,action/reducer/store写在了不同的文件夹里.方便项目后期维护,便于管理.
 3. 有关redux的使用方法清自行查阅文档.
 ### code-push(热更新)使用方法
-1. 
+1. ios端的code-push(热更新已经配置好),使用时将
