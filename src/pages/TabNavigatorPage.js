@@ -36,6 +36,19 @@ export const SimpleAppNavigator = TabNavigator({
     animationEnabled: true,
     lazy: false,
     tabBarPosition:'bottom',
+    showIcon:true,
+    //标题样式
+    labelStyle:{
+        textAlign: 'center',
+        fontSize:12,
+    },
+    //图标样式
+    iconStyle:{
+        alignSelf:'center',
+        width: 16,
+        height: 16,
+
+    },
 });
 const mapStateToProps = (store)=>({
     nav : store.TabNavigatorReducer,

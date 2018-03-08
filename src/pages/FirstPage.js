@@ -15,7 +15,12 @@ class FirstPage extends PureComponent {
     }
     static navigationOptions = {
         tabBarLabel: '页面1',
-        //drawerLabel:'页面1'
+        tabBarIcon:({ tintColor }) => (
+            <Image
+                source={require('../resources/labelIcon/photo.png')}
+                style={[{width: 26,height:26},{tintColor:tintColor}]}
+            />
+        ),
     };
     render() {
         return (

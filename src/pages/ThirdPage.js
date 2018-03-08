@@ -3,11 +3,17 @@ import {
     StyleSheet,
     Text,
     View,
+    Image
 } from 'react-native';
 export default class ThirdPage extends Component<Props> {
     static navigationOptions = {
         tabBarLabel: '页面3',
-        //drawerLabel:'页面3'
+        tabBarIcon:({ tintColor }) => (
+            <Image
+                source={require('../resources/labelIcon/remoteControl.png')}
+                style={[{width: 26,height:26},{tintColor:tintColor}]}
+            />
+        ),
     };
     render() {
         return (

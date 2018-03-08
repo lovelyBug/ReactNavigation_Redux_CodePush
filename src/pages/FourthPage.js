@@ -3,11 +3,17 @@ import {
     StyleSheet,
     Text,
     View,
+    Image
 } from 'react-native';
 export default class FourthPage extends Component<Props> {
     static navigationOptions = {
         tabBarLabel: '页面4',
-        //drawerLabel:'页面4'
+        tabBarIcon:({ tintColor }) => (
+            <Image
+                source={require('../resources/labelIcon/devices.png')}
+                style={[{width: 26,height:26},{tintColor:tintColor}]}
+            />
+        ),
     };
     render() {
         return (

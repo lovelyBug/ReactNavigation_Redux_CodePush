@@ -3,11 +3,17 @@ import {
     StyleSheet,
     Text,
     View,
+    Image
 } from 'react-native';
 export default class SecondPage extends Component<Props> {
     static navigationOptions = {
         tabBarLabel: '页面2',
-        //drawerLabel:'页面2'
+        tabBarIcon:({ tintColor }) => (
+            <Image
+                source={require('../resources/labelIcon/download.png')}
+                style={[{width: 26,height:26},{tintColor:tintColor}]}
+            />
+        ),
     };
     render() {
         return (
