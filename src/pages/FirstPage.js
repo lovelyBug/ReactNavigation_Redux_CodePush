@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import {connect} from 'react-redux';
 import {CHANGE_SOMETHING} from '../actions/FirstPageActions';
-import codePush from 'react-native-code-push';
 class FirstPage extends PureComponent {
     constructor(props){
         super(props);
@@ -31,7 +30,7 @@ class FirstPage extends PureComponent {
                     }}
                 >
                     <Text style={styles.welcome}>
-                        {this.props.status == 'CHANGE_SOMETHING' ? 'You touched me!' : 'This is First Page!'}
+                        {this.props.status == 'CHANGE_SOMETHING' ? 'You touched me,redux work successfully!' : 'This is First Page!\nTouch me to test redux'}
                     </Text>
                 </TouchableOpacity>
             </View>
